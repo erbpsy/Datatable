@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+    <style>
+    #example thead th, tfoot th{
+        background-color: #808080;
+        text-align: left;
+        color: #fff;
+        font-size: larger;
+    }
+    #example{
+        padding-top: 2%;
+    }
+    .dataTables_length, .dataTables_filter, .dataTables_info{
+        font-size: 18px;
+    }
+    .dataTables_length select{
+        width: 100px;
+        height: 30px;
+     }
+     .dataTables_filter input{
+         height: 30px;
+     }
+    </style>
+    </head>
+    <body>
+
+
+<table id="example" class="display" style="width:100%">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Office</th>
+            <th>Extn.</th>
+            <th>Start date</th>
+            <th>Salary</th>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Office</th>
+            <th>Extn.</th>
+            <th>Start date</th>
+            <th>Salary</th>
+        </tr>
+    </tfoot>
+</table>
+<script>
+$(document).ready(function() {
+    $('#example').DataTable( {
+        "ajax": "arraydata.txt"
+    } );
+} );
+</script>
+</body>
+</html>
+  
