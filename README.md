@@ -1,4 +1,5 @@
 # Datatable
+
 //------------ Zero configuration Starts---------------------------------//
 
 
@@ -19,3 +20,13 @@ Working Link :https://erbpsy.github.io/Datatable/arraysourcedatatable.html
 
 
 //------------ Javascript sourced data End---------------------------------//
+
+//------------ Ajax data source (arrays) Starts---------------------------------//
+
+
+https://erbpsy.github.io/Datatable/externalarraydatasourcedatatable.html
+
+
+//------------ Ajax data source (arrays) End---------------------------------//
+
+for more functionalities in datatable https://datatables.net/examples/
